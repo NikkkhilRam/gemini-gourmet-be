@@ -25,6 +25,7 @@ mongoose
 
 app.use("/api/recipes", recipeRoutes);
 app.use("/api/yt", ytRoutes);
+app.get("/api/test", res.send("Working fine"));
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
